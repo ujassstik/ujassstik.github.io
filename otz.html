@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_otz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>RETPSY</title>
+</head>
+<body>
+    <main>
+        <header>    
+            <div class='container'>
+                <div class='header-line'>
+                    <div class='logo'>
+                        <a href="index.html">
+                            <img src="logo.png" width="93" height="24px" />
+                        </a>
+                    </div>
+                    <div class="nav">
+                        <a class="nav-item" href="uchet.html">учет+</a>
+                        <a class="nav-item" href="lk.html">личный кабинет+</a>
+                        <a class="nav-item" href="otz.html">отзывы</a>
+                        <a class="nav-item" href="index.html">о нас</a>
+                    </div>
+                </div>
+            </header>
+        </main>
+        <div class="block">
+            <img src="отзывыы.png">
+        </div>
+            <div class="cards">
+                <div class="container1">
+                    <div class="cards-holder">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="card-img" src="icon.png">
+                    </div>
+                    <div class="card-title">
+                        Любовь Ивановна
+                        г. Москва                        
+                    </div>
+                    <div class="card-desc">
+                        Очень удобная ИС для учета книг.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img class="card-img" src="icon.png">
+                    </div>
+                    <div class="card-title">
+                        Ирина Алексовна
+                        г. Ухта   
+                    </div>
+                    <div class="card-desc">
+                        Спасибо, очень удобно!
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img class="card-img" src="icon.png">
+                    </div>
+                    <div class="card-title">
+                        Роман Жукорлов
+                        г. Пенза                       
+                    </div>
+                    <div class="card-desc">
+                        Хороший сайт, пользуюсь давно.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="cards1">
+            <div class="container1">
+                <div class="cards-holder">
+            <div class="card">
+                <div class="card-image">
+                    <img class="card-img" src="icon.png">
+                </div>
+                <div class="card-title">
+                    Евгений Олегович г. Москва                                           
+                </div>
+                <div class="card-desc">
+                    Очень нравится функционал.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="card-img" src="icon.png">
+                </div>
+                <div class="card-title">
+                    Евгения Мкадова
+                    г. Ухта                        
+                </div>
+                <div class="card-desc">
+                    Давно ищю что-то подобное, спасибо.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="card-img" src="icon.png">
+                </div>
+                <div class="card-title">
+                    Надежда Юрьева
+                    г. Москва                        
+                </div>
+                <div class="card-desc">
+                    Быстро разобралась, круто.
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="block3">
+    <div class="btn1">
+
+<!-- Кнопка активации -->
+<label class="button1" for="modal-1">ОСТАВИТЬ ОТЗЫВ</label>
+<!-- Модальное окно -->
+<div class="modal">
+  <input class="modal-open" id="modal-1" type="checkbox" hidden>
+  <div class="modal-wrap" aria-hidden="true" role="dialog">
+    <label class="modal-overlay" for="modal-1"></label>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>Оставьте свой отзыв </h2>
+        <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+      </div>
+      <div class="modal-body">
+        <p>Оставьте свой отзыв на RETPSY.</p>
+        <div class="form-fields">
+            <div class="form-field">
+                <input type="text" placeholder="Введите свою почту: " name="email" required>
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Введите ФИО пользователя:" name="name" required>
+            </div>
+            <div class="form-field">
+            <textarea rows="4" cols="50" name="subject" placeholder="Введите ваше сообщение:" class="message" required></textarea>
+        </div>
+        </div>
+            <div class="rating-area">
+            <input type="radio" id="star-5" name="rating" value="5">
+            <label for="star-5" title="Оценка «5»"></label>	
+            <input type="radio" id="star-4" name="rating" value="4">
+            <label for="star-4" title="Оценка «4»"></label>    
+            <input type="radio" id="star-3" name="rating" value="3">
+            <label for="star-3" title="Оценка «3»"></label>  
+            <input type="radio" id="star-2" name="rating" value="2">
+            <label for="star-2" title="Оценка «2»"></label>    
+            <input type="radio" id="star-1" name="rating" value="1">
+            <label for="star-1" title="Оценка «1»"></label>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <label class="btn btn-primary" for="modal-1">Отправить!</label>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+</div>
+
+
+    </body>
+    <footer>
+        <p class="footer_text">Все права защищены © 2023</p>
+      </div>
+     </footer>
+    </html>

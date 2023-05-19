@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+  background-color:#FFFCDA;
+  margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .logo {
+    padding-left: 0%;
+    margin-right: 7%;
+  }
+  .header-line {
+    position: absolute;
+    width: 600px;
+    height: 23px;
+    left: 70px;
+    top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: #C72A00 ;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    
+    margin-right: 9px;
+
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: FFFCDA;
+    color: rgba(250, 160, 136, 0.33);
+}
+main{
+    display: flex;
+    height: 70px;
+}
+
+
+.block{
+    padding-top: -100px;
+    padding-bottom: 50px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.block3{
+    padding-top: -120px;
+    padding-bottom: 70px;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.cards-holder {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    background-color: #C72A00;
+    box-shadow: 9px 11px 9px 0px #00000040;
+    margin-top: -20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 290px;
+    width: 286px;
+    left: 65px;
+    top: 328px;
+    border-radius: 30px;
+}
+.card-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.12em;
+
+    margin-left: 30px;
+    margin-right: 30px;
+
+    color: #FFFCDA;
+}
+.card-desc {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 25px;
+    margin-right: 25px;
+        
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.08em;
+
+    color: #FFFCDA;
+}
+
+.cards1 {
+    top: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.button1 {
+    color: #FFFCDA ;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 52px;
+
+    width: 369px;
+    height: 55px;
+    left: 585px;
+    top: 930px;
+    
+    background: #C72A00;
+    border-radius: 20px;
+    transition: background-color 0.4s linear;
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.button1:hover {
+    color:#C72A00;
+    background-color: #F2EFCB;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#C72A00;
+    min-height: 70px;
+    width: 100%;
+    margin-top: auto;
+}
+footer .footer_text{
+    color:#FFFCDA;
+    font-weight: 500;
+    font-size: 16px;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+  /* Стили модального окна */
+.modal-header h2 {
+    color: #555;  
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;    
+    margin: 0;
+}
+/* кнопка закрытия окна */
+.modal .btn-close {
+    color: #aaa;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.modal .btn-close:hover {
+    color: red;
+}
+/* слой затемнения */
+.modal-wrap:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+}
+.modal-overlay {
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+}
+/* активация слоя затемнения и модального блока */
+.modal-open:checked ~ .modal-wrap:before,
+.modal-open:checked ~ .modal-wrap .modal-overlay {
+    display: block;
+}
+.modal-open:checked ~ .modal-wrap .modal-dialog {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+/* элементы модального окна */
+.modal-dialog {
+    background: #FFFCDA;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    width: 80%;
+    max-width: 500px;
+    left: 50%;
+    top: -100%;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    z-index: 103;
+}
+.modal-body {
+  padding: 20px;
+}
+.modal-body p {
+    margin: 0;
+}
+.modal-header,
+.modal-footer {
+    padding: 20px 20px;
+}
+.modal-header {
+    border-bottom: #eaeaea solid 1px;
+}
+.modal-header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+.modal-footer {
+    border-top: #eaeaea solid 1px;
+    text-align: right;
+}
+/* адаптивные картинки в модальном блоке */
+.modal-body img { 
+    max-width: 100%;
+    height: auto;
+}
+/* кнопки */
+.btn {
+    background: #fff;
+    border: #555 solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+}
+.btn:hover, .btn:focus {
+    background: #f2f2f2;
+}
+.btn-primary {
+    background: #C72A00;
+    border-color: #C72A00;
+    color: #fff;
+}
+.btn-primary:hover{
+    background: #aaa;
+}
+
+
+
+
+/*оценка в звездах*/
+.rating-area {
+	overflow: hidden;
+	width: 220px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 35px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 25px;
+	line-height: 25px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: #C72A00;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: #C72A00;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: #C72A00;
+	text-shadow: 1px 1px #C72A00;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+.form-fields {
+    width: 100%;
+}
+
+.form-field {
+    margin: 10px 0;
+}
+input{
+    left: 45px;
+    height: 45px;
+    width: 96%;
+    color:#C72A00;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #FFFCDA;
+    border-radius: 9px;
+    padding-left: 25px;
+    border-color: #C72A00;
+}
+textarea{
+    background: #fff; 
+    width: 96%;
+    height: 110px;
+    border: 3px solid #C72A00;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 10px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    font-weight: 300;
+    color:#C72A00;
+    padding-left:25px;
+    padding-right:20px;
+    padding-top:12px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
+
+
