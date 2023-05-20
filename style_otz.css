@@ -82,6 +82,10 @@ main{
     top: 328px;
     border-radius: 30px;
 }
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.9s;
+}
 .card-image {
     display: flex;
     justify-content: center;
@@ -164,19 +168,34 @@ footer{
     width: 100%;
     margin-top: auto;
 }
+
+.footer_icons1 img  {
+position: relative;
+width: 30px;
+height: 30px;
+left: 300px;
+margin: 5px;
+
+}
+
+.footer_icons:hover{
+    opacity: 0.3;
+    transition: 0.4S;
+}
+
+
 footer .footer_text{
     color:#FFFCDA;
     font-weight: 500;
     font-size: 16px;
+    position: relative;
+    left: 77px;
 }
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
-
-
-
 
   /* Стили модального окна */
 .modal-header h2 {
@@ -307,9 +326,6 @@ body {
     background: #aaa;
 }
 
-
-
-
 /*оценка в звездах*/
 .rating-area {
 	overflow: hidden;
@@ -393,5 +409,3 @@ textarea{
     margin-bottom:20px;
     overflow:hidden;
 }
-
-
