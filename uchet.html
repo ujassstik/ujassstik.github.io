@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style_uchet.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
     <main>
@@ -25,12 +26,14 @@
                         <a class="nav-item" href="lk.html">личный кабинет+</a>
                         <a class="nav-item" href="otz.html">отзывы</a>
                         <a class="nav-item" href="index.html">о нас</a>
+                        <a class="nav-item" href="avt.html">войти</a>
                     </div>
                 </div>
             </header>
     </main>
     <div class="form-container">
         <div class="wra">
+            <div class="imga"><img src="uch.png"></div>
             <div class="wrapper">
                 <form class="input__main" action="">
                         <input class="input1" type="text" placeholder="ID" autofocus="on" />
@@ -83,7 +86,7 @@
                         <td>Кузьменко В. </td>
                         <td>Книга</td>
                         <td>Питер</td>
-                        <td>244</td>
+                        <td>303</td>
                         <td> 06.11.2019 16:50</td>
                         <td> </td>
                         <td> На руках</td>
@@ -101,7 +104,7 @@
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Стихи для взромлых.</td>
+                        <td>Стихи для взрослых.</td>
                         <td>Пушкин</td>
                         <td>Журнал</td>
                         <td>АСТ </td>
@@ -112,7 +115,7 @@
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td>Трагедии и сонетыю</td>
+                        <td>Трагедии и сонеты.</td>
                         <td>Шекспир У.</td>
                         <td>Книга</td>
                         <td>Эксмо-пресс</td>
@@ -124,7 +127,7 @@
                     <tr>
                         <td>7</td>
                         <td>Базы данных в Delphi 7.</td>
-                        <td>Вагин Р. М. </td>
+                        <td>Лаундес </td>
                         <td>Книга</td>
                         <td>Харвест </td>
                         <td> 305</td>
@@ -156,7 +159,7 @@
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td>м. Цветаева</td>
+                        <td>м. Цветаева.</td>
                         <td> Цветаева М. </td>
                         <td>Книга и CD</td>
                         <td>АСТ</td>
@@ -169,10 +172,100 @@
             </div>
         </div>
     </div>
+            <div class="cards-holder">
+            <label class="button1" for="modal-1">Добавить</label>
+            <label class="button1" for="modal-2">Удалить</label>
+            </div>
+
+<!-- Модальное окно -->
+<div class="modal">
+    <input class="modal-open" id="modal-1" type="checkbox" hidden>
+    <div class="modal-wrap" aria-hidden="true" role="dialog">
+      <label class="modal-overlay" for="modal-1"></label>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h2>Добавление книги</h2>
+          <label class="btn-close" for="modal-1" aria-hidden="true">×</label>
+        </div>
+        <div class="modal-body" for="modal-1">
+          <div class="form-fields">
+            <div class="form-field">
+                <p>Дата выдачи</p>
+                <input type="date"  name="date" required>
+            </div>
+            <div class="form-field">
+                <p>Дата возврата</p>
+                <input type="date" name="date" required>
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Введите название книги:"  required>
+            </div>
+            <div class="form-field">
+                <input type="ip" placeholder="Введите код книги:" name="ip" required>
+            </div>
+            <div class="form-field">
+                <input type="ip" placeholder="Введите код читателя:" name="ip" required>
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Читатель" name="name" required>
+            </div>
+            <div class="form-field">
+                <input type="ip" placeholder="Штрих-код:" name="ip" required>
+            </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <label class="btn btn-primary" for="modal-1">Добавить</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно -->
+<div class="modal">
+    <input class="modal-open" id="modal-2" type="checkbox" hidden>
+    <div class="modal-wrap" aria-hidden="true" role="dialog">
+      <label class="modal-overlay" for="modal-2"></label>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h2>Удаление книги</h2>
+          <label class="btn-close" for="modal-2" aria-hidden="true">×</label>
+        </div>
+        <div class="modal-body" for="modal-2">
+          <div class="form-fields">
+            <div class="form-field">
+                <input type="text" placeholder="Введите название книги:"  required>
+            </div>
+            <div class="form-field">
+                <input type="ip" placeholder="Введите код книги:" name="ip" required>
+            </div>
+            <div class="form-field">
+                <input type="ip" placeholder="Штрих-код:" name="ip" required>
+            </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <label class="btn btn-primary" for="modal-2">Удалить</label>
+        </div>
+      </div>
+    </div>
+  </div>
         </body>
         <script src="script.js"></script>
         <footer>
-            <p class="footer_text">Все права защищены © 2023</p>
-          </div>
+            <p class="footer_text">Все права защищены © 2023</p>   
+            <div class="footer_icons1">
+                <a href="https://web.telegram.org/a/">
+                    <img class="footer_icons" src="tg.png" alt="">
+                </a>
+        
+                <a href="https://www.instagram.com/">
+                    <img class="footer_icons" src="inst.png" alt="">
+                </a>
+        
+                <a href="https://vk.com">
+                    <img class="footer_icons" src="vk.png" alt="">
+                </a>
+            </div>
          </footer>
         </html>
