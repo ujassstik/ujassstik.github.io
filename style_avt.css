@@ -189,9 +189,28 @@ footer{
     background-color:#C72A00;
     min-height: 70px;
     width: 100%;
+    margin-top: auto;
 }
+
+.footer_icons1 img  {
+position: relative;
+width: 30px;
+height: 30px;
+left: 520px;
+margin: 5px;
+
+}
+
+.footer_icons:hover{
+    opacity: 0.3;
+    transition: 0.4S;
+}
+
+
 footer .footer_text{
     color:#FFFCDA;
     font-weight: 500;
     font-size: 16px;
+    position: relative;
+    left: 77px;
 }
