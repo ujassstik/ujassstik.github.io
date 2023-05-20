@@ -88,14 +88,14 @@ main .main_promo_text{
     align-items: center;
     
     border-radius: 20px;
-    margin-top: -100px;
+    margin-top: -10px;
 }
 
 .form-container {
     max-width: 1760px;
     width: 100%;
 
-    width: 1530px;
+    width: 1500px;
 
     margin: 0 auto;
     padding:  0px 50px 50px 50px;
@@ -207,9 +207,236 @@ footer{
     background-color:#C72A00;
     min-height: 70px;
     width: 100%;
+    margin-top: auto;
 }
+
+.footer_icons1 img  {
+position: relative;
+width: 30px;
+height: 30px;
+left: 500px;
+margin: 5px;
+
+}
+
+.footer_icons:hover{
+    opacity: 0.3;
+    transition: 0.4S;
+}
+
+
 footer .footer_text{
     color:#FFFCDA;
     font-weight: 500;
     font-size: 16px;
+    position: relative;
+    left: 77px;
+}
+
+.button1 {
+    color: #FFFCDA ;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 52px;
+
+    width: s69px;
+    height: 55px;
+    left: 520px;
+    top: 930px;
+    
+    background: #C72A00;
+    border-radius: 20px;
+    transition: background-color 0.4s linear;
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.button1:hover {
+    color:#C72A00;
+    background-color: #F2EFCB;
+}
+
+.cards-holder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: -20px;
+
+}
+
+.button1 {
+    margin: 10px;
+    height: 50px;
+    width: 190px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.imga{
+    margin-bottom: 30px;
+}
+
+.wrapper{
+    margin-bottom: 50px;
+}
+
+ /* Стили модального окна */
+ .modal-header h2 {
+    color: #555;  
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;    
+    margin: 0;
+}
+/* кнопка закрытия окна */
+.modal .btn-close {
+    color: #aaa;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.modal .btn-close:hover {
+    color: red;
+}
+/* слой затемнения */
+.modal-wrap:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+}
+.modal-overlay {
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+}
+/* активация слоя затемнения и модального блока */
+.modal-open:checked ~ .modal-wrap:before,
+.modal-open:checked ~ .modal-wrap .modal-overlay {
+    display: block;
+}
+.modal-open:checked ~ .modal-wrap .modal-dialog {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+/* элементы модального окна */
+.modal-dialog {
+    background: #FFFCDA;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    width: 80%;
+    max-width: 500px;
+    left: 50%;
+    top: -100%;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    z-index: 103;
+    
+}
+.modal-body {
+  padding: 20px;
+  font-size: 12px;
+  margin-top: -20px;
+}
+.modal-body p {
+    margin: 0;
+}
+.modal-header,
+.modal-footer {
+    padding: 20px 20px;
+}
+.modal-header {
+    border-bottom: #eaeaea solid 1px;
+}
+.modal-header h2 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+}
+.modal-footer {
+    border-top: #eaeaea solid 1px;
+    text-align: right;
+}
+/* адаптивные картинки в модальном блоке */
+.modal-body img { 
+    max-width: 100%;
+    height: auto;
+}
+/* кнопки */
+.btn {
+    background: #fff;
+    border: #555 solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+}
+.btn:hover, .btn:focus {
+    background: #f2f2f2;
+}
+.btn-primary {
+    background: #C72A00;
+    border-color: #C72A00;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.btn-primary:hover{
+    background: #aaa;
+}
+.form-fields {
+    width: 100%;
+}
+
+.form-field {
+    margin: 10px 0;
+}
+input{
+    left: 45px;
+    height: 25px;
+    width: 96%;
+    color:#C72A00;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #FFFCDA;
+    border-radius: 9px;
+    padding-left: 5px;
+    border-color: #C72A00;
 }
